@@ -36,4 +36,10 @@ $(document).ready(function() {
    $(".bottom_button").mouseleave(function() {
        $("body").css("background-color", "grey");
    });
+
+
+   $("#first_button").click(function() {
+       $(".card").hide(slow);
+   });
+
 }); 
