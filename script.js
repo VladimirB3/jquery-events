@@ -38,12 +38,20 @@ $(document).ready(function() {
    });
 
 
-   $("#first_button").click(function() {
-       $("#1para").toggle(slow);
+   $("#first_button").mouseenter(function() { 
+       $("#first_button").fadeTo(1000, 0.5);
+   });
+   $("#first_button").mouseleave(function() { 
+       $("#first_button").fadeTo(1000, 1);
    });
 
-$("#second_button").click(function() {
-       $("#2para").toggle(1000);
-   });
+
+   $("#second_button").click(function(e) {
+        e.preventDefault();
+        var $this = $(this).parent().find('p');
+        $("#2para").not($this).show();
+        $this.slideToggle('slow');
+    });
+
 
 }); 
