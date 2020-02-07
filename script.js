@@ -39,7 +39,11 @@ $(document).ready(function() {
 
 
    $("#first_button").click(function() {
-       $(".card").hide(slow);
+       $("#1para").toggle(slow);
+   });
+
+$("#second_button").click(function() {
+       $("#2para").toggle(1000);
    });
 
 }); 
