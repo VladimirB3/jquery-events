@@ -9,6 +9,11 @@ $(document).ready(function() {
    $("#stream3_btn").on("click", function() {
         $(this).removeClass('highlight_stream').addClass('highlight_stream');
    });
+   
+   $("p").on("click", function() {
+       $("p").children("a").css("color", "yellow");
+   });
+
 
 
 }); 
