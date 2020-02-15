@@ -26,6 +26,13 @@ $(document).ready(function() {
        $(this).toggleClass("highlight_stream");
    });
 
+	$("#select_btn").click(function() {
+		$(".card:not(.highlight_stream)").hide();	 
+	});
+
+	$("#all_btn").click(function(){
+        $(".card").show();	
+    });
 
 
 }); 
