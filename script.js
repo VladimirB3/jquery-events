@@ -14,6 +14,10 @@ $(document).ready(function() {
        $("p").children("a").css("color", "yellow");
    });
 
+   $("button").click(function() {
+       $(this).next().slideToggle("slow");
+   });
+
 
 
 }); 
