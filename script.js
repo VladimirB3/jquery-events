@@ -10,13 +10,19 @@ $(document).ready(function() {
         $(this).removeClass('highlight_stream').addClass('highlight_stream');
    });
    
-   $("p").on("click", function() {
-       $("p").children("a").css("color", "yellow");
+   $("p").click(function(){
+		$(this).children("a").css("background-color", "yellow");
    });
 
-   $("button").click(function() {
-       $(this).next().slideToggle("slow");
+   $("button").click(function(){
+		$(this).prev().slideToggle('slow');
    });
+
+   $("img").on("click", function(){
+       $(this).next().children("p").slideDown();
+   });
+
+   
 
 
 
