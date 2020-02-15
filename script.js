@@ -22,7 +22,9 @@ $(document).ready(function() {
        $(this).next().children("p").slideDown();
    });
 
-   
+   $(".card").on("click", function() {
+       $(this).toggleClass("highlight_stream");
+   });
 
 
 

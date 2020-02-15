@@ -155,3 +155,7 @@ li {
 		font-size: 2em;
 	}
 }
+
+.highlight {
+    background-color: pink;
+}
